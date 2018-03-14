@@ -1,0 +1,155 @@
+
+
+.comments {
+
+$bgCircle:#ff7a06;
+$bgComent:#eeeeee;
+
+	.items {
+		position: relative;
+	}
+
+	[class*="route-"] {
+		position: absolute;
+		display: none;
+		z-index: 10;
+		top: 125px;
+	}
+	.route-right {
+		right: 0;
+	}
+
+	.route-left {
+		left: 0;
+	}
+
+	.owl-dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		@include radius;
+		display: none;
+		border: 2px solid #3cbfa4;
+		margin-right: 5px;
+		margin-top: 15px;
+	}
+
+	.owl-dot.active {
+		background-color: #28333d;
+		border-color: #28333d;
+	}	
+	.method-title {
+		margin-top: 60px;
+		font-family: $GilroyBold;
+		font-size: 30px;
+		color: $colorNumbersTitle;
+		text-align: center;
+
+		.caption {
+			color: $colorNumbersCaption;
+		}		
+	}
+
+	.items-wrapper {
+		text-align: justify;
+	}
+
+	.items-wrapper:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+
+	.item {
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		width: 100%;
+		max-width: 300px;
+		margin-top: 60px;
+	}
+
+	.item-bg {
+		font-family: $GilroyBold;
+		font-size: 36px;
+		display: inline-block;
+		width: 115px;
+		height: 115px;
+		overflow: hidden;
+		@include radius;
+		padding-bottom: 10px;
+		background: $bgCircle;
+	}
+	.item-name{
+		width: 100%;
+		height: 30px;
+		font-family: $GilroyBold;
+		font-size: 16px;
+		padding-top: 7px;
+		color:$colorNumber;
+		text-align: center;
+	}
+	.item-desc {
+		font-family: $Gilroy;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 15px;
+		margin-top: 20px;
+		@include radius(10px);
+		padding: 20px;
+		text-align: left;
+		width: 100%;
+		height: 150px;
+		background: $bgComent;
+		position: relative;
+	}
+	.item-desc:after{
+		content: "";
+		width: 20px;
+	    height: 20px;
+	    transform: rotate(45deg);
+	    background: $bgComent;
+	    position: absolute;
+	    left: 48%;
+	    z-index: -1;
+	    top: -10px;
+	}
+	.more-views{
+		width: 100%;
+	    height: 30px;
+	    text-align: center;
+	    a{
+	    	color: $bgCircle;
+		    font-size: 16px;
+		    transition: .4s;
+	    }
+	    a:hover{
+	    	color: #000;
+		    font-size: 16px;
+		    transition: .4s;
+	    }
+	}
+}
+
+@media screen and (max-width: 620px) and (min-width: 320px) {
+	.comments {
+		[class*="route-"] {
+			display: block;
+		}
+
+		.items-wrapper {
+			text-align: center;
+		}
+
+		.method-title {
+			margin-top: 45px;
+			font-family: $GilroySemibold;
+			font-size: 24px;
+			line-height: 28px;
+		}
+
+		.item-desc {
+			line-height: 16px;
+		}
+	}
+}

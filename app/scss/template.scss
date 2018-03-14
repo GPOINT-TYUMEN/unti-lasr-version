@@ -1,0 +1,128 @@
+@import "../libs/functions.scss";
+@import "../fonts/fonts.scss";
+//> OVERALL
+$bgBtn1: #ff7a06;
+$colorBtn1: #FFF;
+[class*="btn_"] {
+	padding: 10px 0;
+	border-radius: 7px;
+	outline: 0;
+	cursor: pointer;
+	display: inline-block;
+    text-align: center;
+}
+
+.btn-cont {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  text-align: center;
+}
+
+
+.btn_1 {
+	width: 158px;
+	background-color: $bgBtn1;
+	color: $colorBtn1;
+	border: 1px solid $bgBtn1;	
+	font-family: $GilroySemibold;
+	font-size: 16px;
+} 
+.btn_1:hover {
+	transition: 0.4s;
+	background-color: transparent;
+	color: $bgBtn1;
+}
+
+.btn_2 {
+	min-width: 160px;
+	background-color: $bgBtn1;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: $colorBtn1;
+	border: 1px solid $bgBtn1;	
+	font-family: $GilroySemibold;
+	font-size: 16px;
+} 
+.btn_2:hover {
+	transition: 0.4s;
+	background-color: transparent;
+}
+
+
+.btn_3 {
+  width: 150px;
+  background-color: $bgBtn1;
+  color: $colorBtn1;
+  border: 1px solid $bgBtn1;  
+  font-family: $GilroySemibold;
+  font-size: 16px;
+} 
+.btn_3:hover {
+  transition: 0.4s;
+  background-color: transparent;
+  color: $bgBtn1;
+}
+.btn_5 {
+  width: 150px;
+  background: $colorBtn1;
+  color: $bgBtn1;
+  border: 1px solid $colorBtn1;  
+  font-family: $GilroySemibold;
+  font-size: 16px;
+} 
+.btn_5:hover {
+  transition: 0.4s;
+  background: $colorBtn1;
+  color: #000;
+}
+
+[class*="route-"] {
+	position: absolute;
+}
+
+.mobile-content{
+	display: none;
+}
+
+
+.mobile-content{
+	.catalog:first-child{
+		margin-top: 70px;
+	}
+	.catalog{
+		margin-top: 0px;
+		.module-title{
+			margin-top: 0px;
+		}
+		.advantages-content{
+			margin-top: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 700px) and (min-width: 320px) {
+	.mobile-content{
+		display: block;
+	}
+	.desctop-content{
+		display: none;
+	}
+}
+
+@import "../templates/site/plugins/owl/scss/plugin.scss";
+@import "../templates/site/widgets/modal/scss/widget.scss";
+@import "../templates/site/widgets/photoswipe/scss/widget.scss";
+//< OVERALL  
+
+@import "../templates/site/modules/header-nav/scss/module.scss";
+@import "../templates/site/modules/bunner-slider-1/scss/module.scss";
+@import "../templates/site/modules/advantage/scss/module.scss";
+@import "../templates/site/modules/advantage-2/scss/module.scss";
+@import "../templates/site/modules/preview/scss/module.scss";
+@import "../templates/site/modules/preview-3/scss/module.scss";
+@import "../templates/site/modules/module-contacts-1/scss/module.scss";
+@import "../templates/site/modules/module-contacts-2/scss/module.scss";
+@import "../templates/site/modules/catalog/scss/module.scss";
+@import "../templates/site/modules/comments/scss/module.scss";
+@import "../templates/site/modules/method-payment/scss/module.scss";

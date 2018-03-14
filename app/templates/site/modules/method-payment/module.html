@@ -1,0 +1,30 @@
+<div class="module_sec method-payment" id="sposob">
+	<div class="module_container">
+		<div class="module_wrapper">
+			<div class="method-title" id="method-payment">
+				Способы оплаты
+			</div>
+			<div class="items">
+				<img class="route-left" src="images/route-left.png">
+				<img class="route-right" src="images/route-right.png">		
+				<div class="items-wrapper">
+					@@include('views/method.html', {
+						"number": "card",
+						"desc": "На расчетный счет<br/>организации"
+					})
+					@@include('views/method.html', {
+						"number": "online",
+						"desc": "На карту сбербанка<br/>(без комиссии)"
+					})
+					@@include('views/method.html', {
+						"number": "delivery",
+						"desc": "Оплата курьеру<br/>при получении"
+					})						
+				</div>	
+
+																						
+			</div>
+
+		</div>
+	</div>	
+</div>			

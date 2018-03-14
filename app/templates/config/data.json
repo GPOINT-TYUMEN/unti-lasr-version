@@ -1,0 +1,28 @@
+{
+
+	"phone": "8 99 9 9 09",
+	"tel": "+799",
+	"title": "afaf",
+
+
+	"project": {
+		"author": "sergey_yachmenev_lfc_9",
+		"manager": "https://vk.com/id382619751",
+		"url": "https://купиунты.рф"
+	},
+
+
+	"mail": {
+		"email": {
+			"0": "webproger2014@gmail.com",
+			"1": "webproger2014@gmail.com"
+		},
+
+		"theme": "Тема письма",
+		"authorMsg": "От кого письмо"
+	},
+
+	"load": {
+		"dir": "valenki"
+	}
+}

@@ -1,0 +1,315 @@
+$inpuTBorderModal: #28333d;
+$colorInputTileModal: #28333d;
+$colorFormTitleModal: #28333d;
+$bgCheckPoliticaModal: #1f2d6f;
+$colorPoliticaModal: #2b2b2b;
+$colorPoliticaAModal: #28333d;
+$bgContactsModal: #f3f4f9;
+$colorErrorModal: #1f2d6f;
+$colorSuccessModal: #1f2d6f;
+$formBg:#ff7a06;
+$colorTxt:#fff;
+
+$bgErrorInput: rgba(255, 0, 0, 0.12);
+
+.modal {
+	background-color: rgba(0, 0, 0, 0.62);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	.widget_container {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		overflow-y: auto;
+	}
+
+	.widget_wrapper {
+		position: relative;
+		margin: auto;
+		background-color: $formBg;
+		width: 100%;
+		border-radius: 10px;
+		max-width: 360px;
+		padding: 20px;
+	}
+
+	.modal-close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+
+		i {
+			font-size: 20px;
+			color: #fff;
+		}
+	}
+
+	.modal-close:hover {
+		i {
+			transition: 0.4s;
+			color: #000;
+		}
+	}
+
+	.images {
+		text-align: justify;
+
+		.img-1 {
+			display: block;
+			margin: auto;
+		}
+
+		.img-2 {
+			display: inline-block;
+			max-width: 240px;
+		}
+
+		.img-3 {
+			display: inline-block;
+			max-width: 160px;
+		}
+
+		.img-4 {
+			display: inline-block;
+			max-width: 112px;
+		}
+	}
+
+	.images:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+
+	form {
+		max-width: 650px;
+		margin: auto;
+	}
+
+	.form-title {
+		margin-bottom: 30px;
+		font-family: $GilroyMedium;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.form-title-wnd {
+		margin-bottom: 30px;
+		font-family: $GilroyMedium;
+		font-size: 15px;
+		text-align: center;
+		color:$colorTxt;
+		line-height: 20px;
+	}
+	.form-title-main {
+		margin-bottom: 30px;
+		font-family: $GilroyBold;
+		color:$colorTxt;
+		font-size: 25px;
+		text-align: center;
+		line-height: 20px;
+	}
+
+	.form-title.cent {
+		text-align: center;
+		color:$colorTxt;
+	}
+
+	.inputs {
+		text-align: justify
+	}
+
+	.inputs:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+
+	.input {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+
+		input[type="text"] {
+			min-height: 35px;
+			padding-left: 15px;
+			text-transform: uppercase;
+		}
+
+		textarea {
+			resize: none;
+			min-height: 75px;
+			padding: 10px;
+			text-transform: uppercase;
+		}
+
+		input[type="text"], textarea {
+			outline: 0;
+			// margin-top: 10px;		
+			display: inline-block;
+			width: 100%;
+			border-radius: 7px;
+			border: 0;
+			font-family: $GilroyRegular;	
+			font-size: 16px;
+		}
+
+		input[type="text"].error, textarea.error {
+			background-color: $bgErrorInput;
+			transition: 0.4s;
+		}
+	}
+
+	.input-0 {
+		min-height: 80px;
+	}
+
+	.input-2 {
+		max-width: 240px;
+		height: 98px;
+	}
+
+	.input-3 {
+		height: 98px;
+		max-width: 150px;
+	}
+
+	.input-title {
+		padding-left: 15px;
+		font-family: $GilroyMedium;
+		color: $colorTxt;
+		font-size: 18px;
+	}
+
+	//> MESSAGE SEND
+	.msg {
+
+	}
+
+	.msg.success {
+		color: $colorSuccessModal;
+	}
+
+	.msg.error {
+		color: $colorErrorModal;
+	}
+	//< MESSAGE SEND
+
+	.politica {
+		cursor: pointer;
+
+		.check {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 16px;
+			height: 16px;
+			border: 2px solid $colorTxt;
+			svg {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 1px;
+				max-width: 10px;
+				max-height: 10px;
+				margin: auto;
+				transition: 0.4s;
+
+				.svg-check {
+					fill: $colorTxt;
+				}
+			}
+		}
+
+		.check[check="true"] svg {
+			transform: rotate(0deg) scale(1);
+			opacity: 1;
+		}
+
+		.check[check=""] svg,
+		.check[check="false"] svg {
+			transform: rotate(50deg) scale(1.8);
+			opacity: 0;			
+		}
+
+		.check.warning {
+			transition: 0.4s;
+			border-color: red;
+		}
+		
+		.caption {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 10px;
+			max-width: 290px;
+			font-family: $GilroyMedium;
+			font-size: 15px;
+			font-style: italic;
+			color: $colorTxt;
+
+			a {
+				color: $colorTxt;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	[class*="btn_"] {
+		margin-top: 22px;
+	}	
+}
+
+.form-send {
+	text-align: center;
+}	
+
+
+@media screen and (max-width: 660px) and (min-width: 320px) {
+	.modal {
+		.input-2 {
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 524px) and (min-width: 320px) {
+	.modal {
+		.widget_wrapper {
+			padding: 15px;
+			padding-top: 35px;
+		}
+
+		.form-title {
+			font-size: 16px;
+			font-family: $GilroyMedium;
+			line-height: 18px;
+		}		
+
+		.input-2,
+		.input-3 {
+			max-width: 100%;
+		}
+
+		.politica {
+			.caption {
+				margin-left: 5px;
+				width: 85%;
+			}
+		}
+
+		.input {
+			input[type="text"], textarea {
+				font-size: 18px;
+			}
+		}	
+
+		.form-send {
+			text-align: center;
+		}	
+	}
+}
+

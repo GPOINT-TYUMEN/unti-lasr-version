@@ -1,0 +1,43 @@
+{
+  "name": "webproger2014",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "webproger2014",
+  "license": "ISC",
+  "devDependencies": {
+    "ajax-picker": "^1.5.2",
+    "ajax-request": "^1.2.3",
+    "atomicjs": "^3.2.1",
+    "gulp": "^3.9.1",
+    "gulp-callback": "0.0.3",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-dest": "^0.2.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-file-include": "^2.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-js-import": "^1.0.6",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-livereload": "^3.8.1",
+    "gulp-remove-files": "0.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-run-seq": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sftp": "^0.1.5",
+    "gulp-ssh": "^0.6.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.2.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.2",
+    "del": "^3.0.0",
+    "gulp-git": "^2.5.1",
+    "jsonfile": "^4.0.0",
+    "yargs": "^11.0.0"
+  }
+}

@@ -1,0 +1,39 @@
+$OpenSans: 'OpenSans';
+$OpenSansItalic: 'OpenSans-Italic';
+$OpenSansBold: 'OpenSans-Bold';
+$OpenSansSemibold: 'OpenSans-Semibold';
+
+$HelveticaNeueCyr: 'HelveticaNeueCyr-Medium';
+$HelveticaNeueCyrBold: 'HelveticaNeueCyr-Bold';
+$HelveticaNeueCyrBlack: 'HelveticaNeueCyr-Black';
+$HelveticaNeueCyrLight: 'HelveticaNeueCyr-Light';
+$HelveticaNeueCyrRoman: 'HelveticaNeueCyr-Roman';
+
+
+$Gilroy: 'Gilroy-Regular';
+$GilroyBlack: 'Gilroy-Black';
+$GilroyRegular: 'Gilroy-Regular';
+$GilroyMedium: 'Gilroy-Medium';
+$GilroySemibold: 'Gilroy-Semibold';
+$GilroyBold: 'Gilroy-Bold';
+$GilroyThin: 'Gilroy-Thin';
+
+
+@include fonts($OpenSans, 'open-sans/');
+@include fonts($OpenSansItalic, 'open-sans/');
+@include fonts($OpenSansBold, 'open-sans/');
+@include fonts($OpenSansSemibold, 'open-sans/');
+
+@include fonts($HelveticaNeueCyr, 'helvetica/');
+@include fonts($HelveticaNeueCyrBold, 'helvetica/');
+@include fonts($HelveticaNeueCyrLight, 'helvetica/');
+@include fonts($HelveticaNeueCyrBlack, 'helvetica/');
+@include fonts($HelveticaNeueCyrRoman, 'helvetica/');
+
+@include fonts($Gilroy, 'gilroy/');
+@include fonts($GilroyRegular, 'gilroy/');
+@include fonts($GilroyMedium, 'gilroy/');
+@include fonts($GilroySemibold, 'gilroy/');
+@include fonts($GilroyBold, 'gilroy/');
+@include fonts($GilroyBlack, 'gilroy/');
+@include fonts($GilroyThin, 'gilroy/');

@@ -1,0 +1,68 @@
+$backgroundColor: #fff;
+$backgroundColorCard: #eeeeee;
+$titleColorPreview: #fc6d04;
+$textColorPreview: #353434;
+$nullColorPreview: #8c8c8c;
+
+.preview {
+	background: $backgroundColor;
+	margin-top: 40px;
+}
+.preview-wrapper {
+	text-align: justify;
+    background: #fff;
+    height: 390px;
+    overflow: hidden;
+}
+.preview-card{
+	width: 100%;
+	min-height: 390px;
+	background: $backgroundColorCard;
+	float: left;
+}
+.preview-img{
+	width: 48%;
+	overflow: hidden;
+	float: left;
+	img{
+		height: 100%;
+	}
+}
+.preview-desc{
+	float: right;
+    width: 40%;
+    padding-top: 65px;
+    .preview-title{
+    	font-family: $GilroyBlack;
+    	font-size: 30px;
+    	line-height: 24px;
+    	color:$titleColorPreview;
+    }
+    .preview-text{
+    	font-family: $Gilroy;
+    	font-size: 16px;
+    	line-height: 17px;
+    	font-weight: bold;
+    	color:$textColorPreview;
+    	margin-top: 20px;
+    }
+    .preview-caption{
+    	font-family: $Gilroy;
+    	font-size: 16px;
+    	line-height: 17px;
+    	font-style: italic;
+    	font-weight: bold;
+    	color:$nullColorPreview;
+    	margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.preview {
+        .preview-img{
+            img{
+                height: auto;
+            }
+        }
+	}
+}
